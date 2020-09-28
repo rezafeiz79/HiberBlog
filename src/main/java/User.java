@@ -5,13 +5,13 @@ import javax.persistence.Id;
 @Entity
 public class User {
     @Id @GeneratedValue
-    private String id;
+    private Integer id;
     private String userName;
     private String nationalCode;
     private String birthDay;
     private String password;
 
-    public User(String id, String userName, String nationalCode, String birthDay, String password) {
+    public User(Integer id, String userName, String nationalCode, String birthDay, String password) {
         this.id = id;
         this.userName = userName;
         this.nationalCode = nationalCode;
@@ -19,11 +19,11 @@ public class User {
         this.password = password;
     }
 
-    public String getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
