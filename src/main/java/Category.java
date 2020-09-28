@@ -5,21 +5,21 @@ import javax.persistence.Id;
 @Entity
 public class Category {
     @Id @GeneratedValue
-    private int id;
+    private Integer id;
     private String title;
     private String description;
 
-    public Category(int id, String title, String description) {
+    public Category(Integer id, String title, String description) {
         this.id = id;
         this.title = title;
         this.description = description;
     }
 
-    public int getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
