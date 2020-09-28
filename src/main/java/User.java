@@ -10,14 +10,17 @@ public class User {
     private String password;
     @ManyToOne(cascade = CascadeType.ALL)
     private Role role;
+    @OneToOne
+    private Address address;
 
-    public User(Integer id, String userName, String nationalCode, String birthDay, String password, Role role) {
+    public User(Integer id, String userName, String nationalCode, String birthDay, String password, Role role, Address address) {
         this.id = id;
         this.userName = userName;
         this.nationalCode = nationalCode;
         this.birthDay = birthDay;
         this.password = password;
         this.role = role;
+        this.address = address;
     }
 
     public User() { }
@@ -68,5 +71,13 @@ public class User {
 
     public void setRole(Role role) {
         this.role = role;
+    }
+
+    public Address getAddress() {
+        return address;
+    }
+
+    public void setAddress(Address address) {
+        this.address = address;
     }
 }
