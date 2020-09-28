@@ -9,6 +9,7 @@
         <property name = "hibernate.connection.url">jdbc:mariadb://localhost/blog</property>
         <property name = "hibernate.connection.username">root</property>
         <property name = "hibernate.connection.password"></property>
+        <property name="hbm2ddl.auto">update</property>
 
         <mapping class="Address"/>
         <mapping class="Article"/>
