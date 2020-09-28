@@ -10,5 +10,12 @@
         <property name = "hibernate.connection.username">root</property>
         <property name = "hibernate.connection.password"></property>
 
+        <mapping class="Address"/>
+        <mapping class="Article"/>
+        <mapping class="Category"/>
+        <mapping class="Role"/>
+        <mapping class="Tag"/>
+        <mapping class="User"/>
+
     </session-factory>
 </hibernate-configuration>
