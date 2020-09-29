@@ -10,9 +10,9 @@ public class Article {
     private String content;
     private String createDate;
     private Boolean isPublished;
-    @ManyToMany
+    @ManyToMany(cascade = CascadeType.ALL)
     private Set<Category> categories;
-    @ManyToMany
+    @ManyToMany(cascade = CascadeType.ALL)
     private Set<Tag> tags;
     @OneToOne(cascade = CascadeType.ALL)
     private User user;
