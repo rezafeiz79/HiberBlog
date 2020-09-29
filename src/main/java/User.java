@@ -10,7 +10,7 @@ public class User {
     private String password;
     @ManyToOne(cascade = CascadeType.ALL)
     private Role role;
-    @OneToOne
+    @OneToOne(cascade = CascadeType.ALL)
     private Address address;
 
     public User(Integer id, String userName, String nationalCode, String birthDay, String password, Role role, Address address) {
